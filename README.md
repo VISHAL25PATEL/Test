@@ -1,4 +1,1 @@
-https://chatgpt.com/share/690b1b0d-aeb0-8010-a8ed-32f2dacc4338
-
-
-https://chatgpt.com/share/690b26e0-e408-8010-bf37-090c177e826d
+https://chatgpt.com/share/690c1c20-7ce4-8010-a1d9-85c90a3f04de
