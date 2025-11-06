@@ -1,0 +1,36 @@
+🚀 4. Build and Run Commands
+
+# In project root
+mvn clean package
+
+Run producer (to fill Kafka):
+
+java -cp target/streaming-app-1.0-SNAPSHOT.jar com.project.TransactionProducer
+
+Run Spark streaming app:
+
+$SPARK_HOME/bin/spark-submit \
+  --class com.project.SparkStreamingApp \
+  --master local[*] \
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.2 \
+  target/streaming-app-1.0-SNAPSHOT.jar
+
+
+---
+
+🧩 Verify Results in MySQL
+
+USE reports;
+SELECT * FROM customer_category_agg ORDER BY processed_at DESC LIMIT 10;
+SELECT * FROM top_spenders ORDER BY processed_at DESC LIMIT 10;
+
+
+---
+
+Would you like me to now give you a ready-to-run Ubuntu command script (.sh file) that automates:
+
+Kafka + Zookeeper start
+
+MySQL DB/table creation
+
+Running producer + spark-submit
