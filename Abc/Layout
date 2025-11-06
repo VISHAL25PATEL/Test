@@ -1,0 +1,7 @@
+~/streaming-demo/
+└── kafka-spark-streaming/
+    └── streaming-app/
+        ├── pom.xml
+        └── src/main/java/com/project/
+            ├── TransactionProducer.java
+            └── SparkStreamingApp.java
